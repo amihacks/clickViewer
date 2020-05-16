@@ -1,5 +1,6 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse("Placeholder text for the click index.")
+    return render(request, 'click/index.html')
