@@ -1,25 +1,20 @@
 
 var canvas = document.getElementById("C");
-
-// get canvas 2D context and set him correct size
 var ctx = canvas.getContext('2d');
+
 resize();
 
-// last known position
 var pos = { x: 0, y: 0 };
-
 window.addEventListener('resize', resize);
 document.addEventListener('mousemove', draw);
 document.addEventListener('mousedown', setPosition);
 document.addEventListener('mouseenter', setPosition);
 
-// new position from mouse event
 function setPosition(e) {
   pos.x = e.clientX;
   pos.y = e.clientY;
 }
 
-// resize canvas
 function resize() {
   ctx.canvas.width = window.innerWidth;
   ctx.canvas.height = window.innerHeight;
@@ -29,6 +24,7 @@ function draw(e) {
   // mouse left button must be pressed
   if (e.buttons !== 1) return;
 
+  //Drawing lines were better
   ctx.beginPath();
 
   ctx.lineWidth = 5;
