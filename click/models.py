@@ -1,6 +1,7 @@
 from django.db import models
 from pynput.mouse import Listener
 
+'''
 class Click(models.Model):
 
     def listener_join():
@@ -9,3 +10,4 @@ class Click(models.Model):
                 print ('Left clicked at ({0}, {1})'.format(x, y))
         with Listener(on_click=on_click) as listnr:
             listnr.join()
+'''
