@@ -1,13 +1,15 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
   <head>
     <!--TEST VALUES, CHANGE LATER-->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel = "stylesheet" type = "text/css" href = "{% static 'click/style.css' %}">
     <title>weesnaw</title>
   </head>
   <body>
-    <canvas class="C"></canvas>
+    <canvas id="C"></canvas>
     <script asyndc>
         var canvas = document.getElementById("C");
         var ctx = canvas.getContext("2d");
